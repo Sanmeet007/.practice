@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="color-scheme" content="dark" />
+    <style>
+      * {
+        color: white;
+      }
+      /* direct child selector */
+      .box > div > p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>One</p>
+      <div>
+        <p>Two</p>
+      </div>
+      <div>
+        <div><p>Three</p></div>
+      </div>
+    </div>
+  </body>
+</html>

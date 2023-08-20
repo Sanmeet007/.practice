@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="color-scheme" content="dark" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Robotto", sans-serif;
+      }
+      .box {
+        position: relative;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        animation: animate 2s infinite ease-in-out;
+        border-radius: 10px;
+      }
+
+      @keyframes animate {
+        0%,
+        100% {
+          transform: scale(1) rotate(0deg);
+          background-color: red;
+          left: 0px;
+        }
+        50% {
+          transform: scale(0.5) rotate(180deg);
+          background-color: yellow;
+          left: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
